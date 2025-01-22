@@ -7,7 +7,7 @@
 </head>
 <body>
 	<!--headings-->
-	<h1>First Heading</h1>
+	<h1 style="color:red; text-align: center;">First Heading</h1>
 	<h2>Second Heading</h2>
 	<h3>Third Heading</h3>
 	<h4>Fourth Heading</h4>
@@ -20,6 +20,8 @@
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!-- buttons -->
+	<button type="button">Click Here</button>
 	<!-- lists -->
 	<!-- ordered list -->
 	<ol>
@@ -43,10 +45,10 @@
 	<!-- horizontal rule -->
 	<hr>
 	<!-- hyperlinks/anchor tag -->
-	<a href="https://strathmore.edu/">
+	<a href="https://strathmore.edu/" class="links">
 		Strathmore University
 	</a>
-	<a href="structure.html" target="_blank">Stucture</a>
+	<a href="structure.html" target="_blank" class="links anotherclass anotherone" title="Go to structure page">Stucture</a>
 	<!-- tables -->
 	<table border="1px" width="50%">
 		<!-- table row - tr -->
@@ -65,13 +67,13 @@
 		</tr>
 	</table>
 	<!-- forms and form elements -->
-	<h2>Registration Form</h2>
-	<form>
+	<h2 id="firstheading">Registration Form</h2>
+	<form action="structure.html" method="">
 		<!-- input element - no closing tag -->
 		<!-- has different types eg text, numbers, file, email, password -->
 		<!-- labels -->
-		<label>First Name:</label>
-		<input type="text" name="firstname" placeholder="Enter firstname"> <!-- alphanumeric characters -->
+		<label for="firstname">First Name:</label>
+		<input type="text" name="firstname" placeholder="Enter firstname" required id="firstname"> <!-- alphanumeric characters -->
 		<!-- input type password -->
 		<label>Password:</label>
 		<input type="password" name="userpassword" placeholder="Enter password">
@@ -98,11 +100,44 @@
 		<label>DSA</label>
 		<input type="checkbox" name="unit3" value="project">
 		<label>IS project</label>
+		<!-- select element -->
+		<label>Course: </label>
+		<select name="course">
+			<!-- options-->
+			<option value="DBIT">DBIT</option>
+			<option>ICS</option>
+			<option selected>BCOM</option>
+		</select>
+		<!-- textarea -->
+		<label>Why do you want to enroll for course?(500words)</label>
+		<textarea rows="10" cols="40">I want t0..</textarea>
 		<!-- submit button-->
 		<input type="submit" name="submit" value="Register">
 		<!-- reset, button, radio, checkbox, color -->
 		<input type="reset" name="reset">
 		<input type="button" name="clear" value="Login">
 	</form>
+	<table border="1px">
+		<tr>
+			<th colspan="3">Strathmore Institute</th>
+			<td rowspan="4">2025</td>
+
+		</tr>
+		<tr>
+			<th>Student</th>
+			<th>Date of birth</th>
+			<th>Course</th>
+		</tr>
+		<tr>
+			<td>Mike</td>
+			<td>12/02/2005</td>
+			<td>DBM</td>
+		</tr>
+		<tr>
+			<td>Mary</td>
+			<td>11/02/2004</td>
+			<td>DBIT</td>
+					</tr>
+	</table>
 </body>
 </html>

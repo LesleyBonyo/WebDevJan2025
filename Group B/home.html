@@ -9,7 +9,7 @@
 	<!-- headings -->
 	<h1>First Heading</h1>
 	<h2>Second Heading</h2>
-	<h3>Third Heading</h3>
+	<h3 style="color: blue; text-align: center;">Third Heading</h3>
 	<h4>Fourth Heading</h4>
 	<h5>Fifth Heading</h5>
 	<h6>Sixth Heading</h6>
@@ -20,18 +20,22 @@
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!-- button -->
+	<button type="button">
+		<a href="https://strathmore.edu/">Click Here</a>
+	</button>
 	<!-- horizontal rule-->
 	<hr>
 	<!-- Lists -->
 	<!-- ordered lists -->
-	<ol>
+	<ol class="myclass">
 		<!-- List items -->
 		<li>DBIT</li>
 		<li>BBIT</li>
 		<li>DBM</li>
 	</ol>
 	<!-- unordered list -->
-	<ul>
+	<ul class="myclass anotherclass anotherone">
 		<!-- list items-->
 		<li>Cats</li>
 		<li>Dogs</li>
@@ -40,7 +44,7 @@
 	<img src="https://cdn.agdaily.com/wp-content/uploads/2017/03/bg-kuster_cow-001.jpg" width="40%">
 	<img src="cow.jpg" width="40%" alt="Brown cow in a green field">
 	<!-- hyperlinks/anchor tag -->
-	<a href="https://strathmore.edu/" target="_blank">
+	<a href="https://strathmore.edu/" target="_blank" title="Go to strathmore website">
 		Strathmore University
 	</a>
 	<a href="structure.html">Structure</a>
@@ -62,13 +66,13 @@
 		</tr>
 	</table>
 	<!-- forms and form elements -->
-	<h2>Registration form</h2>
-	<form>
+	<h2 id="myheading">Registration form</h2>
+	<form action="structure.html" method="">
 		<!-- input elements-->
 		<!-- they are of different types - text, numbers etc-->
 		<!-- label -->
-		<label>Full Name:</label>
-		<input type="text" name="fullname" placeholder="Enter fullname"><!--inputting alphanumeric characters-->
+		<label for="fullname">Full Name:</label>
+		<input type="text" name="fullname" placeholder="Enter fullname" required id="fullname"><!--inputting alphanumeric characters-->
 		<label>Password</label>
 		<!-- input type password-->
 		<input type="password" name="userpass" placeholder="Enter password">
@@ -84,8 +88,31 @@
 		<input type="date" name="dob">
 		<!-- radio button-->
 		<label>gender</label>
-		<input type="radio" name="gender">
-		<input type="radio" name="gender">
+		<input type="radio" name="gender" value="Female">
+		<label>Female</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Male</label>
+		<!-- checkbox -->
+		<label>Units Registered</label>
+		<input type="checkbox" name="unit1" value="Web">
+		<label>Web Development</label>
+		<input type="checkbox" name="unit2" value="DSA">
+		<label>Data Structures</label>
+		<input type="checkbox" name="unit3" value="IS Project">
+		<label>IS Project</label>
+		<!--select -->
+		<label>Course: </label>
+		<select name="course">
+			<!-- options -->
+			<option value="">--select course--</option>
+			<option value="1">DBIT</option>
+			<option selected>ICS</option>
+			<option>DBM</option>
+		</select>
+		<!--textarea -->
+		<label>Personal Statement(500words):</label>
+		<textarea rows="10" cols="15" name="statement">
+		I am... </textarea>
 		<!--submit -->
 		<input type="submit" name="submit" value="Register">
 		<!-- reset -->
@@ -93,5 +120,27 @@
 		<!-- button-->
 		<input type="button" name="course" value="login">
 	</form>
+	<table border="1">
+		<tr>
+			<th colspan="3">Strathmore Institute</th>
+			<th rowspan="4">2025</th>
+		</tr>
+		<tr>
+			<!--table header -->
+			<th>Student</th>
+			<th>Date of Birth</th>
+			<th>Course</th>
+		</tr>
+		<tr>
+			<td>Mike</td>
+			<td>12/02/2005</td>
+			<td>DBM</td>
+		</tr>
+		<tr>
+			<td>Mary</td>
+			<td>11/06/2004</td>
+			<td>DBIT</td>
+		</tr>
+	</table>
 </body>
 </html>
