@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML Elements</title>
+	<!-- add styling -->
+	<style>
+		h5 {
+			color: greenyellow;
+		}
+	</style>
+	<link rel="logo" href="dogs.jpg">
+	<link rel="stylesheet" href="example.css">
 </head>
 <body>
 	<!--headings-->
@@ -14,7 +22,7 @@
 	<h5>Fifth Heading</h5>
 	<h6>Sixth Heading</h6>
 	<!-- paragraphs -->
-	<p>This ia a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<p>This ia a <span style="color: green;">paragraph</span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -72,8 +80,10 @@
 		<!-- input element - no closing tag -->
 		<!-- has different types eg text, numbers, file, email, password -->
 		<!-- labels -->
+		<div>
 		<label for="firstname">First Name:</label>
 		<input type="text" name="firstname" placeholder="Enter firstname" required id="firstname"> <!-- alphanumeric characters -->
+	</div>
 		<!-- input type password -->
 		<label>Password:</label>
 		<input type="password" name="userpassword" placeholder="Enter password">
@@ -139,5 +149,8 @@
 			<td>DBIT</td>
 					</tr>
 	</table>
+	<a href="dogs.jpg" target="_blank">
+		<img src="dogs.jpg">
+	</a>
 </body>
 </html>

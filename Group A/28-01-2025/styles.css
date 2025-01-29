@@ -1,0 +1,40 @@
+h1 {
+	color: purple;
+}
+/* comment */
+/* css selectors */
+
+/* element selector - p, body, html, button */
+body {
+	background-color: lightgray;
+}
+p {
+	text-align: center;
+}
+
+/* id selector */
+#mypar {
+	text-align: right;
+}
+/* class selector */
+p.myclass {
+	font-family: monospace;
+	color: darkblue;
+}
+/* universal selector */
+* {
+	text-decoration: underline;
+}
+/* grouping selector */
+h1, h2, p {
+	text-align: center;
+}
+/* attribute selector */
+[type=button] {
+	color: white;
+	background-color: blue;
+}
+/* descendant selector */
+div a {
+	font-size: 30px;
+}

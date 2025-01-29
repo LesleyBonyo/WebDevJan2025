@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<!-- adding styling -->
+	<style>
+		h1 {
+			color: purple;
+		}
+	</style>
+	<!-- link -->
+	<link rel="icon" href="cow.jpg">
+	<link rel="stylesheet" href="example.css">
+	<!-- script -->
+	<script></script>
 </head>
 <body>
 	<!-- headings -->
@@ -17,7 +28,7 @@
 	<p>This is a paragraph.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	consequat. <span style="color: red;">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<!-- button -->
@@ -71,11 +82,15 @@
 		<!-- input elements-->
 		<!-- they are of different types - text, numbers etc-->
 		<!-- label -->
-		<label for="fullname">Full Name:</label>
-		<input type="text" name="fullname" placeholder="Enter fullname" required id="fullname"><!--inputting alphanumeric characters-->
+		<div>
+			<label for="fullname">Full Name:</label>
+			<input type="text" name="fullname" placeholder="Enter fullname" required id="fullname"><!--inputting alphanumeric characters-->
+		</div>
+		<div>
 		<label>Password</label>
 		<!-- input type password-->
 		<input type="password" name="userpass" placeholder="Enter password">
+	</div>
 		<label>Age:</label>
 		<input type="number" name="age">
 		<label>Student ID</label>
@@ -142,5 +157,9 @@
 			<td>DBIT</td>
 		</tr>
 	</table>
+
+	<a target="_blank" href="cow.jpg">
+		<img src="cow.jpg">
+	</a>
 </body>
 </html>
