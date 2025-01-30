@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/* text properties */
+h1 {
+	text-align: center;
+	text-decoration: overline;
+	text-transform: uppercase;
+}
+p {
+	line-height: 1.5;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	text-align: justify;
+	/* color values 
+	color: black;
+	color: rgba(0, 0, 255, 0.5);*/
+	color: #023047;
+	/*color: hsl(50, 100%, 50%);*/
+
+	/* font properties */
+	font-family: Oswald, cursive, monospace;
+	font-size: 1rem;
+}
+html{
+	/*font-size: 30px;*/
+}
+body {
+	/*font-size: 40px;*/
+}
+h2 {
+	font-style: italic;
+	font-weight: bold;
+	border: 1px solid red;
+	width: 50%;
+}
+/* link states */
+/* unvisted link */
+a:link {
+	color: #fb8500;
+	text-decoration: none;
+}
+/* visited link */
+a:visited {
+	color: #219ebc;
+}
+/* hover */
+a:hover {
+	color: #fb8500;
+	background-color: #219ebc;
+}
+/* selected link */
+a:active {
+	background-color: #023047;
+}

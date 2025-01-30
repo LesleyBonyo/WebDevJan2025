@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* styling text */
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	/* color values 
+	color: red;
+	color: rgb(110, 255, 0 );*/
+	color: #003049; 
+	/*color: hsla(120, 100%, 50%, 0.5 );*/
+}
+html {
+	/*font-size: 32px;*/
+}
+body {
+	font-size: 30px;
+}
+p {
+	line-height: 1.5;
+	text-indent: 20px;
+	letter-spacing: 2px;
+	/* font properties */
+	font-family: ubuntu, lato, cursive, sans-serif;
+	font-size: 1rem;
+	}
+h2 {
+	font-style: italic;
+	font-weight: bold;
+	border: 1px solid black;
+	width: 50%;
+}
+/* link states */
+/* unvisited link */
+a:link {
+	color: #780000;
+	text-decoration: none;
+}
+/* visited link */
+a:visited {
+	color: #c1121f;
+}
+/* hover */
+a:hover{
+	color: white;
+	background-color: #780000;
+}
+/* selected link */
+a:active {
+	color: #fdf0d5;
+	background-color: #c1121f;
+}
