@@ -1,0 +1,23 @@
+h1 {
+	color: black;
+}
+/* add comment */
+/* css selector */
+
+/* element selector */
+p {
+	text-align: right;
+}
+/* id selector */
+#par1 {
+	text-align: center;
+}
+/* class selector */
+.myclass {
+	font-family: cursive;
+
+}
+/* universal selector */
+* {
+	text-decoration: overline;
+}
