@@ -32,6 +32,7 @@ h2 {
 	font-weight: bold;
 	border: 1px solid red;
 	width: 50%;
+	border-radius: 10px;
 }
 /* link states */
 /* unvisted link */
@@ -51,4 +52,63 @@ a:hover {
 /* selected link */
 a:active {
 	background-color: #023047;
+}
+/* background properties */
+body {
+	background-color: lightgray;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* border property*/
+table, th, td {
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: black;*/
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+tr:hover {
+	background-color: blue;
+	color: white;
+}
+/* padding */
+div a{
+	border: 1px solid black;
+	/*padding-top: 20px;
+	padding-right: 20px;*/
+	padding:20px;
+	/* margin 
+	margin-right: 10px;*/
+	margin: 20px;
+}
+/* list properties */
+ul {
+	list-style-type: none;
+	/*list-style-image: url("");*/
+	list-style-position: inside;
+}
+/* box-sizing */
+#first, #second {
+	width: 250px;
+	height: 100px;
+	border: 1px dotted red;
+}
+#first {
+	padding: 50px;
+	
+}
+* {
+	box-sizing: border-box;
+}
+/* display */
+[type=text], [type=submit] {
+	display: block;
+	margin: 10px auto;
+}
+/* overflow */
+.parentdiv {
+	height: 100px;
+	overflow: hidden;
 }
