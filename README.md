@@ -15,11 +15,13 @@
 <div>Used to add styling to a web page</div>
 <h3>Group A</h3>
 <ul>
-  <li> <a href="./Group%20A/structure.html">CSS Introduction</a></li>
-  <li><a href="">CSS Signup page</a></li>
+  <li> <a href="./Group%20A/28-01-2025">CSS Introduction</a> - adding css, css selectors, css properties</li>
+  <li><a href="./Group%20A/06-02-2025">CSS Signup page</a></li>
 </ul>
 <h3>Group B</h3>
 <ul>
-  <li> <a href="./Group%20A/structure.html">CSS Introduction</a></li>
-  <li><a href="">CSS Login page</a></li>
+  <li> <a href="./Group%20B/29-01-2025">CSS Introduction</a> - adding css, css selectors, css properties</li>
+  <li><a href="./Group%20B/06-02-2025">CSS Login page</a></li>
 </ul>
+<hr>
+<h1>JS - JavaScript</h1>
