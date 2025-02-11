@@ -1,0 +1,70 @@
+/* navigation bar */
+.nav {
+	list-style-type: none;
+	background-color:#780000 ;
+	padding: 22px;
+	overflow: hidden;
+	/*display: flex;
+	justify-content: center;*/
+}
+/* nav links */
+li a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.3rem;
+	padding: 18px 40px;
+}
+li a:hover {
+	background-color: white;
+	color: #780000;
+}
+.active {
+	background-color: #c1121f;
+}
+/* nav list items */
+/*.nav li{
+	display: inline;
+}*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* login form */
+h1 {
+	text-align: center;
+}
+.login-form {
+	background-color: #780000;
+	margin: 12px 170px;
+	padding: 20px;
+	border-radius: 7px;
+}
+/*form elements */
+input, select, label {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+input, select {
+	width: 100%;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 7px;
+}
+label {
+	color: white;
+}
+/* login button */
+[type=submit]{
+	background-color: #c1121f;
+	color: white;
+	margin-top: 10px;
+}
+[type=submit]:hover{
+	opacity: 0.6;
+}
+* {
+	box-sizing: border-box;
+}
