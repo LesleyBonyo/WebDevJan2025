@@ -3,12 +3,12 @@
 <h3>Group A</h3>
 <ul>
   <li> <a href="./Group%20A/structure.html">Structure of html</a></li>
-  <li><a href="">Introduction: HTML elements</a></li>
+  <li><a href="./Group%20A/home.html">Introduction: HTML elements</a></li>
 </ul>
-<h3>Group A</h3>
+<h3>Group B</h3>
 <ul>
-  <li> <a href="https://github.com/LesleyBonyo/WebDevJan2025/blob/main/Group%20B/structure.html">Structure of html</a></li>
-  <li><a href="">Introduction: HTML elements</a></li>
+  <li> <a href="./Group%20B/structure.html">Structure of html</a></li>
+  <li><a href="./Group%20B/home.html">Introduction: HTML elements</a></li>
 </ul>
 <hr>
 <h1>CSS - Cascading Style Sheets</h1>
@@ -16,5 +16,10 @@
 <h3>Group A</h3>
 <ul>
   <li> <a href="./Group%20A/structure.html">CSS Introduction</a></li>
-  <li><a href="">Introduction: HTML elements</a></li>
+  <li><a href="">CSS Signup page</a></li>
+</ul>
+<h3>Group B</h3>
+<ul>
+  <li> <a href="./Group%20A/structure.html">CSS Introduction</a></li>
+  <li><a href="">CSS Login page</a></li>
 </ul>
