@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+</head>
+<body>
+	<h1>Sign In</h1>
+	<form>
+		<input type="text" name="firstname" placeholder="Enter first name" id="fname">
+		<input type="password" name="password" placeholder="Enter password" id="password">
+		<span id="passError"></span>
+		<input type="submit" name="submit" value="SignIn" id="signin">
+	</form>
+	<script>
+		//access the elements
+		const firstname = document.getElementById('fname');
+		const password = document.getElementById('password');
+		const signinButton = document.getElementById('signin');
+		const passError = document.getElementById('passError');
+		//check if firstname has only aphabets
+
+		//check password length - min 10 characters
+		function checkPassword(){
+			const passwordValue = password.value;
+			if (passwordValue.length < 10) {
+				//display an error
+				passError.textContent = "Password should have min 10 characters";
+			} else{
+				passError.textContent = "";
+			}
+		}
+		password.addEventListener('input', checkPassword);
+	</script>
+</body>
+</html>

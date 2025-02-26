@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todolist App</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		#taskform{
+			display: flex;
+			justify-content: center;
+			background-color: #003049;
+			margin: auto 180px;
+			padding: 10px;
+		}
+		#task{
+		
+			border: none;
+			padding: 8px 35px;
+		}
+		#addTask{
+			background-color: black;
+			color: white;
+			border: none;
+			padding: 8px 15px;
+		}
+		ol{
+			list-style-type: none;
+			margin: auto 180px;
+		}
+		ol li{
+			margin: 3px auto;
+			background-color: grey;
+			padding: 8px 15px;
+			cursor: pointer;
+			text-align: center;
+		}
+		ol li:hover{
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+	<h1>My To-do List</h1>
+	<div id="taskform">
+	<input type="text" name="task" id="task" placeholder="Enter task">
+	<input type="button" name="addTask" id="addTask" value="Add">
+	</div>
+
+	<ol id="todolist">
+		
+	</ol>
+	<script src="todolist.js"></script>
+</body>
+</html>
