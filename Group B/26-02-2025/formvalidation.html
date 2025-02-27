@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form validation</title>
+	<style>
+		input{ display: block;
+		margin: 10px auto;
+		padding:8px 20px }
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login</h1>
+	<form>
+		<input type="text" name="username" placeholder="enter username" id="username">
+		<input type="password" name="password" placeholder="Enter password" id="password">
+		<div id="passError" style="color: red; text-align: center;"></div>
+		<input type="submit" name="login" value="LOGIN" id="login">
+	</form>
+	<script>
+		//access elements
+		const username = document.getElementById('username');
+		const password = document.getElementById('password');
+		const loginButton = document.getElementById('login');
+		const passError = document.getElementById('passError');
+
+		//check username - has only alphabets
+
+		//check password - min 8 characters
+		function checkPassword(){
+			//pick password entered by user
+			const passValue = password.value;
+			//check if it meets criteria
+			if (passValue.length < 8) {
+				passError.textContent = "Password should have minimum 8 characters";
+			} else {
+				passError.textContent = "";
+			}
+		}
+		//add event handler to the password input element
+		password.addEventListener('input', checkPassword);
+
+	</script>
+</body>
+</html>

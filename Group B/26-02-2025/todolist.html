@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todolist</title>
+	<style>
+		h1{
+			text-align: center;
+		}
+		.listform {
+			display: flex;
+			justify-content: center;
+		}
+		input {
+			padding: 10px 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>To do list</h1>
+	<div class="listform">
+	<input type="text" name="task" id="task" placeholder="Enter task">
+	<input type="button" name="addTask" value="Add" id="addtask">
+</div>
+	<ol id="todolist"></ol>
+	
+	<script src="todolist.js"></script>
+</body>
+</html>
