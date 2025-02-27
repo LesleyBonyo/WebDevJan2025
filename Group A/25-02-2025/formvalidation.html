@@ -4,13 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form Validation</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		input {
+			display: block;
+			margin: 8px auto;
+			padding: 8px 20px;
+		}
+		span{
+			display: block;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 	<h1>Sign In</h1>
 	<form>
-		<input type="text" name="firstname" placeholder="Enter first name" id="fname">
-		<input type="password" name="password" placeholder="Enter password" id="password">
-		<span id="passError"></span>
+		<input type="text" name="firstname" placeholder="Enter first name" id="fname" required>
+		<span id="nameError" style="color:red;"></span>
+		<input type="password" name="password" placeholder="Enter password" id="password" required>
+		<span id="passError" style="color: red;"></span>
 		<input type="submit" name="submit" value="SignIn" id="signin">
 	</form>
 	<script>
@@ -19,19 +34,49 @@
 		const password = document.getElementById('password');
 		const signinButton = document.getElementById('signin');
 		const passError = document.getElementById('passError');
+		const nameError = document.getElementById('nameError');
+		
 		//check if firstname has only aphabets
-
+		function checkName(){
+			//pick the value of the first name
+			const firstnameValue = firstname.value;
+			if (!firstnameValue.match(/^[a-zA-Z]+$/)) {
+				//display an error
+				nameError.textContent = "name should have only alphabets";
+				return false;
+			} else{
+				nameError.textContent = "";
+				return true;
+			}
+		}
+		//add event handler to the first name element
+		firstname.addEventListener('input', checkName);
 		//check password length - min 10 characters
 		function checkPassword(){
 			const passwordValue = password.value;
 			if (passwordValue.length < 10) {
 				//display an error
 				passError.textContent = "Password should have min 10 characters";
+				return false;
 			} else{
 				passError.textContent = "";
+				return true;
 			}
 		}
 		password.addEventListener('input', checkPassword);
+		function submitForm(){
+			//if all the user enters meets criteria - show success
+			if(checkName() && checkPassword()){
+				alert("Successfully signed in");
+			} else{
+				signinButton.disabled = true;
+			}
+
+		}
+		//signinButton.addEventListener('click', checkName)
+		//signinButton.addEventListener('click', checkPassword)
+		signinButton.addEventListener('click', submitForm);
+
 	</script>
 </body>
 </html>
