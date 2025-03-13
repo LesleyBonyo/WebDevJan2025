@@ -17,6 +17,7 @@
 	<h1>Login</h1>
 	<form>
 		<input type="text" name="username" placeholder="enter username" id="username">
+		<div id="userError" style="color: red; text-align: center;"></div>
 		<input type="password" name="password" placeholder="Enter password" id="password">
 		<div id="passError" style="color: red; text-align: center;"></div>
 		<input type="submit" name="login" value="LOGIN" id="login">
@@ -27,8 +28,26 @@
 		const password = document.getElementById('password');
 		const loginButton = document.getElementById('login');
 		const passError = document.getElementById('passError');
+		const userError = document.getElementById('userError');
 
 		//check username - has only alphabets
+		function checkUsername(){
+			//pick the username entered by user
+			const usernameValue = username.value;
+			//check if it meets criteria
+			if (!usernameValue.match(/^[a-zA-Z]+$/)) {
+				userError.textContent = "username should have only alphabets";
+				loginButton.disabled = false;
+
+				return false;
+			} else{
+				userError.textContent = "";
+				return true;
+			}
+
+		}
+		//add event handler to username input
+		username.addEventListener('input', checkUsername);
 
 		//check password - min 8 characters
 		function checkPassword(){
@@ -37,13 +56,29 @@
 			//check if it meets criteria
 			if (passValue.length < 8) {
 				passError.textContent = "Password should have minimum 8 characters";
+					loginButton.disabled = false;
+				
+				return false;
 			} else {
 				passError.textContent = "";
+				return true;
 			}
 		}
 		//add event handler to the password input element
 		password.addEventListener('input', checkPassword);
-
+		//display success if all criteria is met
+		function submitForm(){
+			//check if both functions return true
+			if (checkUsername() && checkPassword()) {
+					alert("successfully logged in");
+					return true;
+			} else{
+				loginButton.disabled = true;
+				return false;
+			}
+		}
+		//add event handler to the login button
+		loginButton.addEventListener('click', submitForm);
 	</script>
 </body>
 </html>

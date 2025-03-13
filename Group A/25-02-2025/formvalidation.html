@@ -46,6 +46,8 @@
 				return false;
 			} else{
 				nameError.textContent = "";
+				//re-enable the signin button if it was disaabled
+				signinButton.disabled = false;
 				return true;
 			}
 		}
@@ -60,17 +62,24 @@
 				return false;
 			} else{
 				passError.textContent = "";
+				//re-enable the signin button if it was disaabled
+				signinButton.disabled = false;
 				return true;
 			}
 		}
 		password.addEventListener('input', checkPassword);
+
 		function submitForm(){
 			//if all the user enters meets criteria - show success
-			if(checkName() && checkPassword()){
+			//check if both functions return true
+			if(checkName() && checkPassword()) {
+				//show success
 				alert("Successfully signed in");
 			} else{
+				//ensure the user doesn't submit if criteria is not met
 				signinButton.disabled = true;
 			}
+			
 
 		}
 		//signinButton.addEventListener('click', checkName)
