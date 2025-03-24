@@ -30,7 +30,8 @@
 		$execute = mysqli_query($connect, $sql);
 		//check if successful
 		if ($execute) {
-			echo "Registered student successfully";
+			//echo "Registered student successfully";
+			header("Location:display.php");
 		} else{
 			die(mysqli_error($connect));
 		}
