@@ -33,7 +33,7 @@
 </ul>
 <h3>Group B</h3>
 <ul>
-  <li> <a href="./Group%20B/12-02-2025">JS Introduction</a>ectors, css properties</li>
+  <li> <a href="./Group%20B/12-02-2025">JS Introduction</a></li>
   <li><a href="./Group%20B/26-02-2025">JS Todolist and Form validation</a></li>
 </ul>
 <hr>
