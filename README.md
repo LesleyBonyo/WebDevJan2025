@@ -25,3 +25,15 @@
 </ul>
 <hr>
 <h1>JS - JavaScript</h1>
+<div>Used to add interactivity to a web page</div>
+<h3>Group A</h3>
+<ul>
+  <li> <a href="./Group%20A/11-02-2025">Js Introduction</a> </li>
+  <li><a href="./Group%20A/25-02-2025">JS Todolist and Form validation</a></li>
+</ul>
+<h3>Group B</h3>
+<ul>
+  <li> <a href="./Group%20B/12-02-2025">JS Introduction</a>ectors, css properties</li>
+  <li><a href="./Group%20B/26-02-2025">JS Todolist and Form validation</a></li>
+</ul>
+<hr>
