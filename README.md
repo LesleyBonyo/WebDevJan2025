@@ -46,7 +46,7 @@
 </ul>
 <h3>Group B</h3>
 <ul>
-  <li> <a href="./Group%20B/12-03-2025/intro.php">PHP Introduction</a>ectors, css properties</li>
+  <li> <a href="./Group%20B/12-03-2025/intro.php">PHP Introduction</a></li>
   <li><a href="./Group%20B/12-03-2025">PHP and MySQL CRUD operations</a></li>
 </ul>
 <hr>
