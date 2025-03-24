@@ -10,4 +10,5 @@
 	if (!$connect) {
 		die(mysqli_connect_error($connect));
 	}
+	
 ?>
