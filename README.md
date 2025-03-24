@@ -37,3 +37,16 @@
   <li><a href="./Group%20B/26-02-2025">JS Todolist and Form validation</a></li>
 </ul>
 <hr>
+<h1>PHP - Hypertext Preprocessor</h1>
+<div>Used to create dynamic and interactive web pages</div>
+<h3>Group A</h3>
+<ul>
+  <li> <a href="./Group%20A/11-03-2025/intro.php">PHP Introduction</a> </li>
+  <li><a href="./Group%20A/11-03-2025">PHP and MySQL CRUD operations</a></li>
+</ul>
+<h3>Group B</h3>
+<ul>
+  <li> <a href="./Group%20B/12-03-2025/intro.php">PHP Introduction</a>ectors, css properties</li>
+  <li><a href="./Group%20B/12-03-2025">PHP and MySQL CRUD operations</a></li>
+</ul>
+<hr>
